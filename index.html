@@ -1,94 +1,206 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>장기 한판 - 개인정보처리방침</title>
+    <title>장기 한판 - 개인정보 처리방침</title>
     <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-sub: #666666;
+            --border-color: #e9ecef;
+        }
+
         body {
-            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-            line-height: 1.6;
-            color: #333;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+            line-height: 1.7;
+            color: var(--text-main);
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
+            padding: 40px 20px;
+            background-color: var(--bg-color);
         }
+
         .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            background-color: var(--card-bg);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
         }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
         h1 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
         }
+
+        .version-date {
+            font-size: 14px;
+            color: var(--text-sub);
+        }
+
         h2 {
-            margin-top: 30px;
-            font-size: 18px;
-            color: #444;
-            border-left: 4px solid #007bff;
-            padding-left: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
         }
-        p, li {
-            font-size: 15px;
-            color: #555;
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background-color: var(--accent-color);
+            margin-right: 12px;
+            border-radius: 2px;
         }
+
+        p,
+        li {
+            font-size: 16px;
+            color: var(--text-main);
+            margin-bottom: 12px;
+        }
+
         ul {
             padding-left: 20px;
+            list-style-type: disc;
         }
+
+        .important-box {
+            background-color: #f1f8ff;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .important-box p {
+            margin-bottom: 0;
+            font-size: 15px;
+            color: #0366d6;
+        }
+
+        .sub-section {
+            padding-left: 16px;
+            border-left: 1px solid var(--border-color);
+            margin-left: 4px;
+        }
+
         .footer {
-            margin-top: 50px;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-            font-size: 13px;
-            color: #888;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
             text-align: center;
+            font-size: 14px;
+            color: var(--text-sub);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <h1>개인정보처리방침</h1>
-        
-        <p><strong>장기 한판</strong>(이하 "앱")은 사용자의 개인정보를 중요시하며, '개인정보 보호법' 등 관련 법령을 준수하고 있습니다. 본 개인정보처리방침은 앱이 사용자의 개인정보를 어떻게 취급하는지 알려드립니다.</p>
+        <header>
+            <h1>개인정보 처리방침</h1>
+            <p class="version-date">공고일자 및 시행일자: 2025년 1월 1일</p>
+        </header>
+
+        <p><strong>'장기 한판'</strong>(이하 "앱")은 사용자의 소중한 개인정보를 보호하기 위해 최선을 다하고 있으며, 「개인정보 보호법」 등 관련 법령을 철저히 준수합니다. 본 방침을 통해
+            앱이 어떠한 정보를 취급하는지 투명하게 안내해 드립니다.</p>
+
+        <div class="important-box">
+            <p>※ 본 앱은 회원가입 절차가 없으며, 사용자의 성명, 이메일, 전화번호 등 직접적인 개인 식별 정보를 수집하거나 서버에 저장하지 않습니다.</p>
+        </div>
 
         <h2>1. 수집하는 개인정보 항목 및 수집 방법</h2>
-        <p>본 앱은 회원가입을 요구하지 않으며, 사용자의 개인정보(이름, 전화번호, 이메일 등)를 별도로 수집하거나 서버에 저장하지 않습니다.</p>
-        <p>단, 앱 서비스 제공 및 품질 향상을 위해 플랫폼(Google Play, Apple App Store) 또는 광고 서비스(AdMob 등), 통계 도구(Firebase 등)를 통해 익명화된 기기 정보나 이용 기록이 자동으로 수집될 수 있습니다.</p>
-        <ul>
-            <li>수집될 수 있는 비식별 정보: 기기 모델명, OS 버전, 앱 이용 기록, 광고 식별자(ADID/IDFA)</li>
-        </ul>
+        <div class="sub-section">
+            <p>앱 서비스 제공 과정에서 서비스 이용 기록 및 기기 정보가 자동으로 생성되어 수집될 수 있습니다.</p>
+            <ul>
+                <li><strong>자동 수집 항목:</strong> 기기 모델명, OS 버전, 광고 식별자(ADID/IDFA), 서비스 이용 기록(대국 기록 등), 접속 로그, 쿠키, 위치 정보(광고
+                    서비스 제공 시 활용될 수 있음)</li>
+                <li><strong>수집 방법:</strong> 앱 실행 시 서드파티 SDK(AdMob 등)를 통한 자동 수집</li>
+            </ul>
+        </div>
 
-        <h2>2. 개인정보의 수집 및 이용 목적</h2>
-        <p>수집된 비식별 정보는 다음의 목적으로만 이용됩니다.</p>
-        <ul>
-            <li>앱의 기본 기능 제공 및 오류 수정</li>
-            <li>서비스 이용 통계 분석 및 품질 개선</li>
-            <li>맞춤형 광고 제공 (광고가 포함된 경우)</li>
-        </ul>
+        <h2>2. 수집된 정보의 이용 목적</h2>
+        <div class="sub-section">
+            <p>수집된 정보는 익명화된 상태로 처리되며, 다음의 목적 이외의 용도로는 사용되지 않습니다.</p>
+            <ul>
+                <li><strong>서비스 제공:</strong> 앱의 기본 기능(장기 대국, 설정 등) 제공 및 오류 수정</li>
+                <li><strong>서비스 분석:</strong> 사용자 경험 개선을 위한 이용 통계 및 트렌드 분석</li>
+                <li><strong>광고 제공:</strong> 구글 AdMob을 활용한 사용자 맞춤형 광고 노출 (해당 시)</li>
+            </ul>
+        </div>
 
-        <h2>3. 개인정보의 제3자 제공</h2>
-        <p>본 앱은 사용자의 개인정보를 제3자에게 제공하지 않습니다. 다만, 법령에 의하거나 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우는 예외로 합니다.</p>
+        <h2>3. 정보의 보유 및 파기 절차</h2>
+        <div class="sub-section">
+            <p>본 앱은 별도의 서버에 사용자 정보를 저장하지 않으므로, 앱 내의 모든 데이터(게임 설정, 진행 상황 등)는 사용자의 기기에만 저장됩니다.</p>
+            <ul>
+                <li><strong>파기 시점:</strong> 사용자가 앱을 삭제할 경우 기기에 저장된 모든 로컬 데이터는 즉시 삭제됩니다.</li>
+                <li>단, 광고 서비스 등을 통해 수집된 비식별 정보는 해당 서비스 제공사(Google 등)의 보유 방침을 따릅니다.</li>
+            </ul>
+        </div>
 
-        <h2>4. 이용자 및 법정대리인의 권리와 그 행사방법</h2>
-        <p>사용자는 언제든지 앱을 삭제하거나 기기 설정에서 권한을 거부함으로써 정보 수집을 중단할 수 있습니다.</p>
+        <h2>4. 정보의 제3자 제공 및 위탁</h2>
+        <div class="sub-section">
+            <p>앱은 원칙적으로 사용자의 개인정보를 외부에 제공하지 않습니다. 단, 효율적인 서비스 운영을 위해 아래와 같은 협력사에 정보 처리를 위탁하고 있습니다.</p>
+            <ul>
+                <li><strong>구글(Google LLC):</strong> AdMob 광고 서비스 제공 및 앱 이용 분석</li>
+            </ul>
+        </div>
 
-        <h2>5. 아동의 개인정보 보호</h2>
-        <p>본 앱은 만 13세 미만 아동의 개인정보를 수집하지 않습니다. 만약 아동의 개인정보가 수집된 사실을 인지하게 되는 경우, 즉시 해당 정보를 파기할 것입니다.</p>
+        <h2>5. 이용자의 권리와 행사 방법</h2>
+        <div class="sub-section">
+            <p>사용자는 언제든지 다음과 같은 방법을 통해 정보 수집을 통제할 수 있습니다.</p>
+            <ul>
+                <li><strong>앱 삭제:</strong> 앱을 삭제함으로써 로컬 데이터 및 정보 수집을 중단할 수 있습니다.</li>
+                <li><strong>광고 설정 변경:</strong> 모바일 기기 설정(안드로이드: 구글 설정 > 광고, iOS: 설정 > 개인정보보호 > 광고)에서 맞춤형 광고 수신을 거부할 수
+                    있습니다.</li>
+            </ul>
+        </div>
 
-        <h2>6. 개인정보 보호책임자</h2>
-        <p>개인정보 관련 문의사항이 있으신 경우 아래 연락처로 문의 주시기 바랍니다.</p>
-        <ul>
-            <li>이메일: flitsky@gmail.com</li>
-        </ul>
+        <h2>6. 개인정보 보호책임자 및 상담 창구</h2>
+        <div class="sub-section">
+            <p>서비스 이용 중 발생하는 개인정보 관련 문의는 아래의 연락처로 보내주시기 바랍니다. 신속하고 성실하게 답변해 드리겠습니다.</p>
+            <ul>
+                <li><strong>이메일:</strong> <a href="mailto:flitsky@gmail.com">flitsky@gmail.com</a></li>
+            </ul>
+        </div>
 
         <div class="footer">
-            <p>본 방침은 2025년 1월 1일부터 시행됩니다.</p>
+            <p>&copy; 2025 Janggi Hanpan. All rights reserved.</p>
         </div>
     </div>
 </body>
+
 </html>
