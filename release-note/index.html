@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>업데이트 노트 - 장기 한판</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #d35400;
+            --text: #2c3e50;
+            --bg: #fdfaf6;
+            --white: #ffffff;
+            --light-gray: #eee;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Pretendard', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .release-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
+        }
+
+        .version-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .version-tag {
+            background-color: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .release-date {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+            color: var(--primary);
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+        }
+
+        h3::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 24px;
+            background-color: var(--accent);
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li::before {
+            content: '•';
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .tag-fix {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+
+        .tag-feat {
+            display: inline-block;
+            background-color: #27ae60;
+            color: white;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+
+        .tag-impr {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+
+        footer {
+            text-align: center;
+            color: #888;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>업데이트 노트</h1>
+            <p>장기 한판의 새로운 소식과 변경 사항을 알려드립니다.</p>
+            <a href="../index.html" class="back-link">← 홈으로 돌아가기</a>
+        </header>
+
+        <!-- v1.3.0 Release -->
+        <article class="release-card">
+            <div class="version-header">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <span class="version-tag">v1.3.0</span>
+                    <h2>몰입감 넘치는 대국 경험</h2>
+                </div>
+                <span class="release-date">2025년 12월 21일</span>
+            </div>
+
+            <p>
+                이번 업데이트에서는 기물을 잡을 때의 시각적 즐거움을 강화하고, 게임의 안정성을 높이는 데 주력했습니다.
+                더욱 생동감 넘치는 장기 한판을 경험해 보세요!
+            </p>
+
+            <h3>✨ 주요 변경 사항 (Highlights)</h3>
+            <ul>
+                <li>
+                    <span class="tag-feat">New</span>
+                    <strong>기물 타격 이펙트 및 애니메이션 추가</strong><br>
+                    강력한 '쾅' 소리와 함께 잡은 기물이 상대방 진영으로 날아가는 애니메이션이 추가되었습니다. 이제 상대의 기물을 잡는 손맛이 더욱 짜릿해집니다.
+                </li>
+                <li>
+                    <span class="tag-impr">Improvement</span>
+                    <strong>오디오 시스템 대폭 개선</strong><br>
+                    웹 환경에서 간헐적으로 소리가 끊기던 현상을 해결하고, 효과음(착수음, 타격음 등) 재생 시스템을 최적화했습니다. 이제 어떤 상황에서도 끊김 없는 사운드를 즐길 수 있습니다.
+                </li>
+            </ul>
+
+            <h3>🐛 버그 수정 (Critial Fixes)</h3>
+            <ul>
+                <li>
+                    <span class="tag-fix">Fix</span>
+                    <strong>왕(King) 제자리 착수 오류 수정</strong><br>
+                    자신의 왕을 집었다가 제자리에 놓을 경우, 의도치 않게 패배 처리되던 치명적인 오류를 수정했습니다. 이제 안심하고 왕을 조작하세요. (Self-Move Ignore 적용)
+                </li>
+                <li>
+                    <span class="tag-fix">Fix</span>
+                    <strong>게임 루프 오류 해결</strong><br>
+                    게임이 종료되었음에도 AI가 계속해서 수를 두던 현상(Flip-Flop Bug)을 수정하여 게임 종료 처리를 명확하게 개선했습니다.
+                </li>
+                <li>
+                    <span class="tag-fix">Fix</span>
+                    <strong>기권 시 사운드 누락 수정</strong><br>
+                    기권(Resign) 버튼을 눌러 패배할 때 패배 효과음이 들리지 않던 문제를 해결했습니다.
+                </li>
+            </ul>
+
+            <h3>⚙️ 기타 변경 사항 (Others)</h3>
+            <ul>
+                <li>
+                    <span class="tag-impr">Refactor</span>
+                    <strong>AI 두뇌 리팩토링</strong>: AI 로직을 `AiBrain` 모듈로 통합하여 더욱 일관성 있고 안정적인 수 읽기가 가능해졌습니다.
+                </li>
+                <li>
+                    <span class="tag-impr">UX</span>
+                    <strong>설정 메뉴 개선</strong>: '착수음' 옵션 명칭을 '효과음'으로 변경하여 타격음 등 전체 효과음을 제어함을 명확히 했습니다.
+                </li>
+                <li>
+                    <span class="tag-impr">UX</span>
+                    <strong>AI 실수 카운트</strong>: 대국 종료 후 AI의 실수 횟수를 분석하여 보여주는 기능을 준비했습니다 (내부 로직 적용 완료).
+                </li>
+            </ul>
+        </article>
+
+        <footer>
+            <p>&copy; 2025 Janggi Hanpan. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
