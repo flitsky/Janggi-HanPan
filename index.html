@@ -173,6 +173,18 @@
     <section class="hero">
         <h1>장기 한판</h1>
         <p>정통 장기의 깊이와 현대적인 감각이 만났습니다.<br>최고의 AI와 함께 실력을 연마하고 장기의 진정한 묘미를 느껴보세요.</p>
+
+        <!-- Merged Test Section Content -->
+        <div class="beta-notice">
+            <p>
+                현재 '장기 한판'은 더욱 완성도 높은 서비스를 제공하기 위해 <strong>비공개 테스트</strong>를 진행하고 있습니다.<br>
+                소중한 피드백으로 앱의 완성도를 함께 높여주실 테스터분들을 모십니다.
+            </p>
+            <p class="beta-email">
+                참여 희망: <a href="mailto:flit9sky@gmail.com">flit9sky@gmail.com</a> (구글 계정 필요)
+            </p>
+        </div>
+
         <div class="cta-group">
             <a href="https://play.google.com/store/apps/details?id=com.zenit9hub.ai.janggi" class="btn btn-test">비공개 테스트
                 다운로드</a>
@@ -180,22 +192,77 @@
         </div>
     </section>
 
+    <!-- Update Section -->
     <section class="update-section">
         <div class="update-content">
-            <div class="update-header">
-                <span class="update-badge">Latest Update v1.5.24</span>
-                <span class="update-date">2025.12.29</span>
+            <!-- Screenshot Gallery -->
+            <div class="screenshot-gallery">
+                <img src="assets/screenshots/screenshot-1.jpg" alt="Character Selection" onclick="openModal(this)">
+                <img src="assets/screenshots/screenshot-2.jpg" alt="Match Settings" onclick="openModal(this)">
+                <img src="assets/screenshots/screenshot-3.jpg" alt="Arrangement Settings" onclick="openModal(this)">
+                <img src="assets/screenshots/screenshot-4.jpg" alt="Match Screen" onclick="openModal(this)">
             </div>
-            <h2>V2 엔진 안정화 및 버그 수정</h2>
+
+            <div class="update-header">
+                <span class="update-badge">Latest Update v1.5.35</span>
+                <span class="update-date">2025.12.30</span>
+            </div>
+            <h2>시스템 안정성 강화 및 UX 개선</h2>
             <p>
-                <strong>V2 엔진</strong>에서의 AI 캐릭터 선택 오류와 대국 기록 저장 문제를 수정하여,<br>
-                더욱 안정적인 실험실 기능을 제공합니다.
+                <strong>캐릭터 및 데이터 구조</strong>를 전면적으로 개선하여 안정성을 높였으며,<br>
+                잠금 상태 대사 등 세심한 디테일을 다듬었습니다.
             </p>
             <a href="release-note/index.html" class="update-link">모든 업데이트 내역 보기 →</a>
         </div>
     </section>
 
     <style>
+        /* Hero Adjustments */
+        .beta-notice {
+            margin-bottom: 30px;
+            color: #555;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 16px;
+            max-width: 700px;
+        }
+
+        .beta-notice p {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        .beta-email a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        /* Screenshot Gallery */
+        .screenshot-gallery {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .screenshot-gallery img {
+            width: 120px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid white;
+        }
+
+        .screenshot-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            border-color: var(--accent);
+        }
+
         .update-section {
             background-color: var(--white);
             padding: 40px 20px;
@@ -265,21 +332,87 @@
         .update-link:hover {
             color: var(--accent);
         }
+
+        /* Image Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90vh;
+            border-radius: 8px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+            animation: zoom 0.3s;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
     </style>
 
-    <section class="test-section">
-        <h2>함께 만드는 장기 한판</h2>
-        <p>
-            현재 '장기 한판'은 더욱 완성도 높은 서비스를 제공하기 위해 <span class="highlight">비공개 테스트</span>를 진행하고 있습니다.<br>
-            소중한 권고와 피드백으로 앱의 완성도를 함께 높여주실 테스터분들을 모십니다.
-        </p>
-        <p>
-            참여를 원하시는 분은 본인의 <span class="highlight">구글 계정 이메일</span>을 아래 주소로 보내주시면<br>
-            확인 후 리포지토리 및 테스트 트랙 참여 방법을 안내해 드리겠습니다.
-        </p>
-        <a href="mailto:flit9sky@gmail.com"
-            style="color: var(--accent); font-weight: 700; text-decoration: none; font-size: 1.2rem;">flit9sky@gmail.com</a>
-    </section>
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script>
+        function openModal(element) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImg");
+            modal.style.display = "block";
+            modalImg.src = element.src;
+        }
+        function closeModal() {
+            var modal = document.getElementById("imageModal");
+            modal.style.display = "none";
+        }
+        // Close on outside click
+        window.onclick = function (event) {
+            var modal = document.getElementById("imageModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
     <section class="features">
         <div class="feature-card">
