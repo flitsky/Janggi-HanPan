@@ -3,6 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
+    <script>
+        (function () {
+            var targetOrigin = 'https://janggi-hanpan.app.rezen.dev';
+            var projectPath = '/Janggi-HanPan';
+            var path = window.location.pathname;
+
+            if (window.location.hostname !== 'flitsky.github.io') {
+                return;
+            }
+
+            if (path.indexOf(projectPath) === 0) {
+                path = path.slice(projectPath.length) || '/';
+            }
+
+            window.location.replace(targetOrigin + path + window.location.search + window.location.hash);
+        }());
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>업데이트 노트 - 장기 한판</title>
     <style>
