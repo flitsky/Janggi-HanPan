@@ -1,0 +1,4 @@
+# 개인정보처리방침 정식 주소는 /privacy/ 이다(Play Console 등록값).
+# 본문은 기존 파일 privacy/privacy.html을 그대로 쓴다.
+/privacy   /privacy/          301
+/privacy/  /privacy/privacy   200

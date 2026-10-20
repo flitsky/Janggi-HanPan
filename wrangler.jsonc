@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "janggi-hanpan",
+  "compatibility_date": "2026-09-18",
+  // 공개 주소는 janggi-hanpan.app.rezen.dev(대시보드 Custom Domain) 하나다.
+  // workers.dev 사본과 버전별 미리보기 URL은 끈다. routes를 비워 두는 동안
+  // wrangler는 대시보드의 Custom Domain을 건드리지 않는다.
+  "workers_dev": false,
+  "preview_urls": false,
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "."
+  }
+}

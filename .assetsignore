@@ -1,0 +1,13 @@
+# 이 폴더는 flitsky/Janggi-HanPan 저장소 루트로 미러되고, Worker janggi-hanpan이
+# 저장소 루트 전체를 정적 자산으로 올린다. 사이트 파일이 아닌 것은 올리지 않는다.
+.git
+.github
+.gitignore
+.assetsignore
+.wrangler
+.dev.vars*
+.env*
+wrangler.jsonc
+node_modules
+.DS_Store
+README.md
